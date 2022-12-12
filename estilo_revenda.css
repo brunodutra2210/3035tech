@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+/* Propriedades da página*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/*Propriedades do corpo da página */
+body{
+    font-size: 100;
+    background: -webkit-radial-gradient(rgb(228, 60, 30), rgb(31, 33, 15));
+    background: radial-gradient(rgb(228, 60, 30), rgb(31, 33, 15));
+
+}
+/*propriedadas do cabeçalho */
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24;
+}
+/*posição do menu */
+.menu{
+    display: flex;
+    gap: 32px;
+}
+/* parágrafo da matéria principal */
+.paragrafo{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff2e7;
+}
+/*estilo da principal sessão */
+.principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+/*estilo do título */
+.principaltitulo{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+    color: #fff2e7;
+}
+/*estilo do rodapé */
+.rodape{
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    justify-content: space-around;
+    padding: 24;   
+    color: #fff2e7;
+}

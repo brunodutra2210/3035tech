@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request</title>
+    <link rel="stylesheet" href="estilo_cadastro.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="menu">
+            <a class="item" href="formulario_cadastro.html">Cadastro</a>
+            <a class="item" href="Revenda_carros.html">Lançamentos</a>
+        </nav>
+        <br>
+    <form id="form" class="form">
+        <fieldset>
+            <h1>Criar conta</h1>
+            <br>
+            <div>
+                <label>Nome</label>
+                <input type="text" nome="nome" id="nome">
+            </div>
+            <div>
+                <label>Sobrenome</label>
+                <input type="text" nome="sobrenome" id="sobrenome">
+            </div>
+            <div>
+                <label>Email</label>
+                <input type="email" nome="email" id="email">
+            </div>
+            <div>
+                <label>Senha</label>
+                <input type="password" nome="password" id="password">
+            </div>
+            <div>
+                <label>Confirme sua Senha</label>
+                <input type="password" nome="password1" id="password1">
+            </div>
+            <div>
+                <label>Idade</label>
+                <input type="number" nome="idade" id="idade">
+            </div>
+            <br>
+        </fieldset>
+        <br>
+        
+        <button onclick="validar()" type="submit">Concluído</button>
+
+    </form>
+    <script>
+        //variaveis
+        function validar(){
+    var nome=document.getElementById("nome");
+    var sobrenome=document.getElementById("sobrenome");
+    var email=document.getElementById("email");
+    var password=document.getElementById("password");
+    var password1=document.getElementById("password1");
+    var idade=document.getElementById("idade");
+    //verificar nome
+    if (nome.value == "") {
+        alert("Nome não informado");
+    
+        nome.focus();
+        return;
+      }
+     //verificar sobrenome 
+    if (sobrenome.value == "") {
+        alert("sobrenome não informado");
+    
+        sobrenome.focus();
+        return;
+      }
+      //verificar email
+    if (email.value== "") {
+        alert("Email não informado");
+    
+        email.focus();
+        return;
+      }
+      // verificar se a senha é igual a senha confirmada
+    if(password.value!=password1.value || password.value==""||password1.value==""){
+        alert("Senha inválida")
+        password.focus() && password1.focus()
+        return;
+    }
+     //verificar se o usuário tem mais de 18 anos
+    if(idade.value<=18){
+        alert("Cadastro não autorizado para menores de idade");
+        idade.focus()
+        return;
+    }
+    //se o cadastro foi preenchido corretamente, retorna a mensagem abaixo 
+    else{
+        alert("Cadastro concluído")
+    }
+}
+    </script>
+    
+</body>
+</html>

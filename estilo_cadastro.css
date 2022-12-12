@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+body{
+    font-size: 100;
+    background: -webkit-radial-gradient(rgb(228, 60, 30), rgb(31, 33, 15));
+    background: radial-gradient(rgb(228, 60, 30), rgb(31, 33, 15));
+    font-family: 'Open Sans', sans-serif;
+    color: #fff2e7;
+    font-weight: 400;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    border: 0;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cabecalho{
+    align-items: center;
+    padding: 24;
+    justify-content: space-around;
+}
+.menu{
+    display: flex;
+    gap: 32px;
+}
+.item{
+    font-family: 'Open Sans', sans-serif;
+    color: #fff2e7;
+    font-weight: 400;
+    font-size: 18px;
+    justify-content: center;
+}
+fieldset{
+    border: 1px solid #fff2e7;
+}
